@@ -74,8 +74,11 @@
 
   function showScreen(id, persist) {
     clearAnalysisTimers();
+    var activeScreen = null;
     document.querySelectorAll(".screen").forEach(function (screen) {
-      screen.classList.toggle("active", screen.id === id);
+      var active = screen.id === id;
+      screen.classList.toggle("active", active);
+      if (active) activeScreen = screen;
     });
     if (persist !== false) {
       state.lastScreen = id;
@@ -86,6 +89,7 @@
     } catch (error) {
       window.scrollTo(0, 0);
     }
+    if (activeScreen) activeScreen.scrollTop = 0;
   }
 
   function answeredCount() {
@@ -183,6 +187,7 @@
         '<span class="v3-option-code">' + letters[index] + '</span>' +
         '<span>' + escapeHTML(option) + '</span><i class="v3-option-radio"></i></button>';
     }).join("");
+    $("quiz").scrollTop = 0;
   }
 
   function answerQuestion(button) {

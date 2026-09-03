@@ -79,6 +79,13 @@
 
   const openDialog = () => {
     window.clearTimeout(closeTimer);
+    const useFullPageExperience = document.body.classList.contains("theme-parent")
+      && window.matchMedia("(max-width: 780px)").matches;
+    if (useFullPageExperience) {
+      const source = dialogFrame.dataset.src || dialogFrame.getAttribute("src");
+      if (source) window.location.assign(source);
+      return;
+    }
     restoreFocus = document.activeElement;
     dialog.hidden = false;
     document.body.classList.add("dialog-open");

@@ -54,7 +54,7 @@ export function assertPublicationAuthorization({ root = defaultRoot } = {}) {
   }
 
   const works = currentWorks(root);
-  if (works.length !== 7) throw new Error(`Expected 7 works-center entries, found ${works.length}`);
+  if (works.length !== 10) throw new Error(`Expected 10 works-center entries, found ${works.length}`);
   if (comparable(works) !== comparable(manifest.works)) {
     throw new Error("The works center no longer matches the publication authorization manifest");
   }

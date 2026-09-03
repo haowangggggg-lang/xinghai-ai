@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "effectiveDate": "2026-08-24",
+  "effectiveDate": "2026-09-03",
   "scope": "Current public website candidate",
   "attestation": {
-    "source": "Company operator confirmation in the Codex task on 2026-08-24",
+    "source": "Company operator confirmations in the Codex tasks on 2026-08-24, 2026-09-02, and 2026-09-03",
     "studentAssentConfirmed": true,
     "guardianAuthorizationConfirmed": true,
     "statement": "The company operator confirmed that every listed student work and student media asset has authorization from both the student and the guardian for public display.",
@@ -44,6 +44,21 @@
       "title": "亲子关系测试",
       "publicUrl": "https://tudu.school/works/parent-child-relationship-test",
       "coverPath": "assets/works/parent-child-test-v1.webp"
+    },
+    {
+      "title": "凤朝凰珠宝",
+      "publicUrl": "https://avyn-nkdfh.github.io/yangzichen-fengchaohuang/",
+      "coverPath": "assets/works/fengchaohuang-v1.webp"
+    },
+    {
+      "title": "蓝鲸1号",
+      "publicUrl": "https://avyn-nkdfh.github.io/yangzichen-blue-whale/",
+      "coverPath": "assets/works/blue-whale-v1.webp"
+    },
+    {
+      "title": "一瓶入海之后",
+      "publicUrl": "https://avyn-nkdfh.github.io/yangzichen-bottle-life/",
+      "coverPath": "assets/works/bottle-life-v1.webp"
     }
   ],
   "media": [
